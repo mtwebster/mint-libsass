@@ -1,0 +1,22 @@
+Source: libsass
+Priority: optional
+Maintainer: Michael Webster <miketwebster@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://www.linuxmint.com/
+#Vcs-Git: https://github.com/mtwebster/mint-libsass
+
+Package: libsass-dev
+Section: libdevel
+Architecture: any
+Depends: libsass1 (= ${binary:Version})
+Description: Development files for libsass
+ Development files for libsass
+
+Package: libsass1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Library files for libsass
+ Library files for libsass

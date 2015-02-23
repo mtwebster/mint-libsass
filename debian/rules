@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+DEB_DH_AUTORECONF_ARGS = --as-needed
+
+override_dh_autoreconf:
+	dh_autoreconf --as-needed ./autogen.sh
+
+%:
+	dh $@ --parallel --with autoreconf
+
