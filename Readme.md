@@ -3,7 +3,7 @@ LibSass
 
 This is a debianized version of libsass
 
-See: git@github.com:sass/libsass
+See: [sass/libsass](https://github.com/sass/libsass)
 
 LibSass is just a library, but if you want to RUN LibSass,
 then go to https://github.com/sass/sassc or
